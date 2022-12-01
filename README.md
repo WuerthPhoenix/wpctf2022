@@ -15,8 +15,10 @@ Start the challenge
    $ cd ..
 ```
 2. start containers
+```
    $ cd ../secure-fileshare-docker-compose
    $ bash -x instance-handler.sh up -i 01
+```
 
 3. instance should be reachable @ http://localhost:8801/
 
