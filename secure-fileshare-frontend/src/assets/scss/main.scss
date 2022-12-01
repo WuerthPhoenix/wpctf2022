@@ -1,0 +1,55 @@
+$feature-flags: (
+  enable-css-custom-properties: true
+);
+
+@import "~@carbon/themes/scss";
+@import "~@carbon/colors/scss";
+@import "~@carbon/motion/scss/motion.scss";
+
+$carbon--theme--light: map-merge(
+  $carbon--theme--g10,
+  (
+          focus: #0A9D81,
+          interactive-01: #0A9D81,
+          interactive-03: #0A9D81,
+          hover-primary: darken(#0A9D81, 10%),
+          active-primary: darken(#0A9D81, 20%),
+          interactive-04: #0A9D81,
+          support-02: #0A9D81,
+          inverse-support-04: #0A9D81,
+          inverse-link: #0A9D81,
+          link-01: #0A9D81,
+          hover-primary-text: darken(#0A9D81, 10%),
+  )
+) !default;
+
+
+$carbon--theme--dark: map-merge(
+  $carbon--theme--g90,
+  (
+          interactive-01: #0A9D81,
+          hover-primary: darken(#0A9D81, 10%),
+          active-primary: darken(#0A9D81, 20%),
+          interactive-04: #0A9D81,
+          support-02: #0A9D81,
+          inverse-support-04: #0A9D81,
+          inverse-link: #0A9D81,
+          link-01: #0A9D81,
+          hover-primary-text: lighten(#0A9D81, 10%),
+  )
+) !default;
+
+// Use the light theme by default
+$carbon--theme: $carbon--theme--light;
+
+// Use the white theme wherever this class is added
+.light {
+  @include carbon--theme($theme: $carbon--theme--light, $emit-custom-properties: true);
+}
+// Use the g90 theme wherever this class is added
+.dark {
+  @include carbon--theme($theme: $carbon--theme--dark, $emit-custom-properties: true);
+}
+
+@import "customized-components/cv-tabs";
+@import "customized-components/scrollbars";

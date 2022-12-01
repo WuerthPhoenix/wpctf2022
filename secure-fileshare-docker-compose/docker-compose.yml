@@ -1,0 +1,36 @@
+version: '3'
+services:
+    ctf-frontend:
+        image: localhost/ctf-frontend
+        ports:
+            - ${EPORT}:80
+        links:
+            - 'ctf-backend'
+
+    ctf-backend:
+        image: localhost/ctf-backend
+        
+        environment:
+            DB_HOST: 'mariadb'
+            DB_USER: 'fsuser'
+            DB_PASS: 'passw0rds4r3h4rd2gu3ssS0m3tim35'
+            DB_NAME: 'fileshare'
+            UPLOAD_PATH: '/var/www/html/uploads'
+            TEAM_NAME: ${TEAM_NAME}
+        links:
+            - 'mariadb'
+
+    mariadb:
+        image: mariadb:latest
+        # volumes:
+        #     - mariadb:/var/lib/mysql
+        environment:
+            # TZ: "Europe/Rome"
+            # MARIADB_ALLOW_EMPTY_PASSWORD: "no"
+            MARIADB_ROOT_PASSWORD: "rootpwd"
+            MARIADB_USER: 'fsuser'
+            MARIADB_PASSWORD: 'passw0rds4r3h4rd2gu3ssS0m3tim35'
+            MARIADB_DATABASE: 'fileshare'
+
+volumes:
+    mariadb:

@@ -1,0 +1,21 @@
+{
+    "name": "wp/sfb",
+    "description": "Secure Fileshare Backend",
+    "type": "project",
+    "license": "GPL",
+    "autoload": {
+        "psr-4": {
+            "Wp\\Sfb\\": "api/lib/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Thomas Forrer",
+            "email": "thomas.forrer@wuerth-phoenix.com"
+        }
+    ],
+    "require": {
+        "ext-mysqli": "*",
+        "firebase/php-jwt": "^6.3"
+    }
+}

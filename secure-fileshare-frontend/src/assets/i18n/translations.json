@@ -1,0 +1,160 @@
+{
+  "app": {
+    "current_tenant": "Current tenant:"
+  },
+  "views": {
+    "dashboard": {
+      "dashboard": "Dashboard",
+      "tiles": {
+        "processing_tree": "Processing tree",
+        "filters": "Filters",
+        "rules": "Rules",
+        "last_edit": "Last edit",
+        "open_processing_tree": "Open processing tree"
+      }
+    },
+    "preview_banner" : {
+      "preview_title": "Design preview",
+      "preview_text": "You are using a preview of Tornado's revamped UI, which currently does not include all functionalities. Please feel free to test it and, since we strive for improving it constantly, please send us your feedback.",
+      "action-label": "Provide feedback"
+    },
+    "processing_tree": {
+      "processing_tree": "Processing Tree",
+      "rules": "Rules",
+      "Filter": "Filter",
+      "Ruleset": "Ruleset",
+      "properties": "Properties",
+      "where": "Where",
+      "name": "Name",
+      "description": "Description",
+      "active": "Active",
+      "parent_node": "Parent node",
+      "actions": "Actions",
+      "continue": "Continue",
+      "ruleset_settings": "Ruleset settings",
+      "back": "Back",
+      "with": "With",
+      "live": "Live",
+      "edit_in_progress": "Editing in progress",
+      "add": "Add",
+      "new_filter_node": "New filter node",
+      "new_ruleset_node": "New ruleset node",
+      "cancel": "Cancel",
+      "select_parent_node_for_new_filter": "Select the parent node for new filter",
+      "select_parent_node_for_new_ruleset": "Select the parent node for new ruleset",
+      "add_filter_node": "Add filter",
+      "add_ruleset_node": "Add ruleset",
+      "delete": "Delete",
+      "disabled": "Disabled",
+      "delete_filter_confirmation_title": "Delete {name} filter",
+      "delete_filter_confirmation_content": "Are you sure you want to delete this filter with all of its contents, including child nodes, rulesets and rules?",
+      "delete_ruleset_confirmation_title": "Delete {name} ruleset",
+      "delete_ruleset_confirmation_content": "Are you sure you want to delete this ruleset with all of its rules?"
+    }
+  },
+  "errors": {
+    "error": "Error",
+    "node_not_found": "Node {path} not found",
+    "node_is_not_a_ruleset": "Node {path} is not a ruleset",
+    "node_details_not_loaded": "Node details {path} not loaded",
+    "rule_not_found": "Rule {path} not found",
+    "node_path_not_found_error": {
+      "title": "Node not present in draft",
+      "message": "The path {path} was expanded in view mode but is not present in the current draft"
+    },
+    "opened_node_path_not_found_error": "The path {path} was opened in view mode but is not present in the current draft",
+    "draft_takeover_generic": "There was an error during the draft takeover",
+    "draft_deploy_generic": "There was an error during the draft deployment",
+    "invalid_name": "Name is required and can contain only alphanumerical characters or underscores",
+    "name_too_long": "Name cannot be more than {limit} characters",
+    "already_existing_node": "A filter with this name already exists"
+  },
+  "editor": {
+    "no_condition_found": "There is no condition",
+    "no_extractor_found": "There is no extractor",
+    "no_actions_found": "There is no action",
+    "from": "from",
+    "modifiers": "Modifiers",
+    "match": "Match",
+    "single_key_match": "Single key match",
+    "named_match": "Named match",
+    "all_matches": "All matches",
+    "group_match_idx": "Group match idx",
+    "no_modifiers_applied": "No modifiers applied",
+    "target": "Target",
+    "add_group": "Add group",
+    "add_condition": "Add condition",
+    "delete_row": "Delete row",
+    "add_condition_below": "Add condition below",
+    "add_group_below": "Add group below",
+    "choose_group_type": "Choose group type",
+    "choose_condition_type": "Choose condition type",
+    "cancel": "Cancel"
+  },
+  "test_window": {
+    "test_event": "Test event",
+    "event_type": "Event type",
+    "creation_time": "Creation time (ms)",
+    "enable_execution_of_actions": "Enable execution of actions",
+    "edit_payload": "Edit payload",
+    "clear_form": "Clear form",
+    "clear_result": "Clear result",
+    "run_test": "Run test",
+    "extracted_variables": "Extracted variables",
+    "select_ruleset_to_see_extracted_variables": "Select ruleset to see extracted variables",
+    "invalid_created_ms": "It must be a valid timestamp",
+    "lines": "{n} line | {n} lines",
+    "save": "Save",
+    "cancel": "Cancel",
+    "no_extracted_variables_found": "No extracted variables found",
+    "testing": "Testing...",
+    "tenant_not_found_error": {
+      "title": "Event not reached",
+      "text": "Your event did not reach your processing tree because it was filtered out by a parent node"
+    },
+    "missing_created_ms": "A creation time is required",
+    "extracted_variables_in_rule": "Extracted variables in rule",
+    "tenant_id": "Tenant ID",
+    "none": "None",
+    "pending_unsaved_changes": "Pending changes not saved"
+  },
+  "edit_mode": {
+    "edit_mode": "Edit mode",
+    "on": "On",
+    "off": "Off",
+    "confirm_deploy_modal": {
+      "title": "Deploy draft in production?",
+      "content": "Do you want to deploy your draft to Tornado? Please ensure that all configurations work properly, as this action is not reversible!",
+      "deploy_draft": "Deploy draft"
+    },
+    "draft_deploy_success_title": "Draft deployed",
+    "draft_deploy_success_message": "Draft deployed successfully",
+    "delete_draft_confirmation_modal": {
+      "title": "Delete draft",
+      "content": "Are you sure you want to delete this draft?"
+    },
+    "delete_draft_title": "Draft deleted",
+    "delete_draft_message": "Draft deleted successfully",
+    "takeover_draft_confirmation_modal": {
+      "title": "Takeover draft",
+      "content": "Are you sure you want to takeover this draft?"
+    },
+    "takeover_draft_notification_success_title": "Draft ownership achieved",
+    "takeover_draft_notification_success_message": "Draft owned successfully",
+    "draft_status": {
+      "saved": "Saved",
+      "saving": "Saving...",
+      "error": "Error",
+      "unsaved_changes": "Unsaved changes",
+      "saving_in_progress": "Saving in progress",
+      "all_changes_saved": "All changes saved",
+      "there_are_unsaved_changes": "There are unsaved changes"
+    },
+    "an_error_occurred_while_saving_the_draft": "An error occurred while saving the draft.",
+    "action": "Action",
+    "unsaved_changes_modal": {
+      "title": "Unsaved changes",
+      "content": "The draft has unsaved local changes. If you proceed, all unsaved changes will be discarded."
+    }
+  }
+}
