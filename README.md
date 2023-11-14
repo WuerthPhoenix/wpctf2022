@@ -22,3 +22,6 @@ Start the challenge
 
 3. instance should be reachable @ http://localhost:8801/
 
+Writeup
+-------
+https://github.com/CyberSp3ck/ctf-writeups/tree/main/wpctf22
