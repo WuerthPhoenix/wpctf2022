@@ -10,7 +10,7 @@ Start the challenge
 ```
    $ cd secure-fileshare-backend
    $ podman build . -t ctf-backend --no-cache
-   $ /cd ../secure-fileshare-frontend
+   $ cd ../secure-fileshare-frontend
    $ podman build . -t ctf-frontend --no-cache
    $ cd ..
 ```
