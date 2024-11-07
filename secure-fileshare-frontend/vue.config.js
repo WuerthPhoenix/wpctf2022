@@ -1,5 +1,6 @@
 module.exports = {
   publicPath: "./",
+  parallel: false,
   devServer: {
     https: false,
     proxy: {
